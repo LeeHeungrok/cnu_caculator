@@ -19,9 +19,19 @@ public class ArrayList<T> implements Stack {
 		this._elements = (T[]) new Object[maxSize];
 	}
 	
+	public boolean isFull() {
+		//check _top that it is full
+		return (this._top == this._maxSize - 1);
+	}
+	
+	public int size() {
+		//check elements length to check _top
+		return this._top + 1;
+	}
+	
 	@Override
 	public boolean push(Object anEntry) {
-		// TODO Auto-generated method stub
+		
 		return false;
 	}
 
