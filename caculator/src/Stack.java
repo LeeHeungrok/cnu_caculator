@@ -1,2 +1,3 @@
 public interface Stack {
+	test;
 }
