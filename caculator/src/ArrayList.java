@@ -65,14 +65,12 @@ public class ArrayList<T> implements Stack {
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return (this._top == -1);
 	}
 
 	@Override
 	public void clear() {
-		// TODO Auto-generated method stub
-		
+		this._top = -1;
+		this._elements = null;
 	}
-	
 }
