@@ -73,4 +73,13 @@ public class ArrayList<T> implements Stack {
 		this._top = -1;
 		this._elements = null;
 	}
+	
+	public T findElementByOrder(int order) {
+		if (this.isEmpty()) {
+			return null;
+		}
+		else {
+			return this._elements[order];
+		}
+	}
 }
