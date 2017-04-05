@@ -30,21 +30,37 @@ public class ArrayList<T> implements Stack {
 	}
 	
 	@Override
-	public boolean push(Object anEntry) {
-		
+	public boolean push(Object newElement) {
+		if (this.isFull()) {
+			return false;
+		}
+		else {
+			this._top++;
+			this._elements[this._top] = (T)newElement;
+			return true;
+		}
 		return false;
 	}
 
 	@Override
 	public Object pop() {
-		// TODO Auto-generated method stub
-		return null;
+		if (this.isEmpty()) {
+			return null;
+		}
+		else {
+			return this._elements[this._top--];
+			//decrement _top
+		}
 	}
 
 	@Override
 	public Object peek() {
-		// TODO Auto-generated method stub
-		return null;
+		if (this.isEmpty()) {
+			return null;
+		}
+		else {
+			return this._elements[this._top];
+		}
 	}
 
 	@Override
