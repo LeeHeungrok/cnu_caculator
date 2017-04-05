@@ -36,8 +36,6 @@ public class AppView {
 			System.out.println(" :: 프로그램을 시작합니다. ::");
 		else if (aMessageID == MessageID.Notice_StartMenu)
 			System.out.println("[수식 입력을 시작합니다.]");
-		else if (aMessageID == MessageID.Notice_InfixToPostfix)
-			System.out.println("[Infix를 Postfix로]");
 		else if (aMessageID == MessageID.Error_Input)
 			System.out.println("ERROR: 잘못된 입력입니다.");
 		else if (aMessageID == MessageID.Notice_EndMenu)
